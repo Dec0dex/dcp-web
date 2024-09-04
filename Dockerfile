@@ -5,11 +5,12 @@ FROM node:20-alpine AS base
 
 # Install and use pnpm
 RUN npm install -g pnpm
+RUN npm install -g @angular/cli
 
 #############################
 # BUILD FOR LOCAL DEVELOPMENT
 #############################
-FROM base As development
+FROM base AS development
 WORKDIR /app
 RUN chown -R node:node /app
 
