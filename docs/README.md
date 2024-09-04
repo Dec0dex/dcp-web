@@ -1,11 +1,11 @@
-# NestJS Backend for Developer Community Platform
+# Angular Web for Developer Community Platform
 [![Build Status](https://github.com/Dec0dex/dcp-web/workflows/Docker/badge.svg)](https://github.com/Dec0dex/dcp-web/actions)
 [![codecov](https://codecov.io/gh/Dec0dex/dcp-web/branch/main/graph/badge.svg)](https://codecov.io/gh/Dec0dex/dcp-web)
 [![Latest Release](https://img.shields.io/github/release/Dec0dex/dcp-web.svg)](https://github.com/Dec0dex/dcp-web/releases)
 [![GitHub Package](https://img.shields.io/badge/docker-GitHub%20Packages-blue)](https://github.com/Dec0dex/dcp-web/pkgs/container/dcp-web)
 
 
-This is a backend for developer Community Platform.
+This is a angular application for developer Community Platform.
 
 ## Detail Documentation
 
