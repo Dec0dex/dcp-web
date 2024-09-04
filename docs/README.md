@@ -28,13 +28,12 @@ This is a angular application for developer Community Platform.
 ## References
 
 - [TypeScript](https://www.typescriptlang.org/)
-- [NestJS](https://docs.nestjs.com/)
-- [NestJS I18n](https://nestjs-i18n.com/)
-- [TypeORM](https://typeorm.io/)
-- [TypeORM Extension](https://typeorm-extension.tada5hi.net/)
+- [Angular](https://angular.dev/)
+- [Angular TransLoco](https://jsverse.github.io/transloco/)
+- [Cypress](https://www.cypress.io/)
+- [StoryBook](https://storybook.js.org/docs/get-started/frameworks/angular?renderer=angular)
 - [SuperTokens](https://supertokens.com/docs/guides)
-- [Nodemailer](https://nodemailer.com/)
-- [NestJS Mailer](https://nest-modules.github.io/mailer/)
+- [Tailwind](https://tailwindcss.com/)
 - [Jest](https://jestjs.io/)
 - [PNPM](https://pnpm.io/)
 - [ESLint](https://eslint.org/)
