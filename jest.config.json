@@ -1,0 +1,26 @@
+{
+  "preset": "jest-preset-angular",
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setup.jest.ts"
+  ],
+  "testPathIgnorePatterns": [
+    "<rootDir>/node_modules/",
+    "<rootDir>/dist/"
+  ],
+  "collectCoverageFrom": [
+      "src/**/*.(t|j)s",
+      "!src/environments/*.(t|j)s",
+      "!src/**/*.jest.(t|j)s",
+      "!**/*.dto.(t|j)s",
+      "!**/*.entity.(t|j)s",
+      "!**/*.spec.(t|j)s",
+      "!**/*.module.(t|j)s",
+      "!**/*.config.(t|j)s",
+      "!**/*.constant.(t|j)s",
+      "!**/*.constants.(t|j)s",
+      "!**/*.routes.(t|j)s",
+      "!src/polyfills.ts",
+      "!src/main.ts"
+  ],
+  "transformIgnorePatterns": ["node_modules/(?!.*\\.(mjs|js)$|.*@ngneat)"]
+}
