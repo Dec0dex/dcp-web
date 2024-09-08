@@ -4,4 +4,10 @@
 
 export const environment = {
   production: false,
+  launchDarklyEnvironment: 'test',
+  launchDarklyClientId: '66d8da3bc4667d0fb5f27b72',
+  apiDomain: 'http://localhost:3000',
+  apiBasePath: '/api',
+  appName: 'Developer Community Platform',
+  websiteDomain: 'http://localhost:4200',
 };

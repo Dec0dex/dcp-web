@@ -1,26 +1,28 @@
 {
   "preset": "jest-preset-angular",
-  "setupFilesAfterEnv": [
-    "<rootDir>/src/setup.jest.ts"
-  ],
-  "testPathIgnorePatterns": [
-    "<rootDir>/node_modules/",
-    "<rootDir>/dist/"
-  ],
+  "setupFilesAfterEnv": ["<rootDir>/src/setup.jest.ts"],
+  "testPathIgnorePatterns": ["<rootDir>/node_modules/", "<rootDir>/dist/"],
   "collectCoverageFrom": [
-      "src/**/*.(t|j)s",
-      "!src/environments/*.(t|j)s",
-      "!src/**/*.jest.(t|j)s",
-      "!**/*.dto.(t|j)s",
-      "!**/*.entity.(t|j)s",
-      "!**/*.spec.(t|j)s",
-      "!**/*.module.(t|j)s",
-      "!**/*.config.(t|j)s",
-      "!**/*.constant.(t|j)s",
-      "!**/*.constants.(t|j)s",
-      "!**/*.routes.(t|j)s",
-      "!src/polyfills.ts",
-      "!src/main.ts"
+    "src/**/*.(t|j)s",
+    "!src/environment/*.(t|j)s",
+    "!src/**/*.jest.(t|j)s",
+    "!**/*.dto.(t|j)s",
+    "!**/*.entity.(t|j)s",
+    "!**/*.spec.(t|j)s",
+    "!**/*.module.(t|j)s",
+    "!**/*.config.(t|j)s",
+    "!**/*.constant.(t|j)s",
+    "!**/*.constants.(t|j)s",
+    "!**/*.routes.(t|j)s",
+    "!src/polyfills.ts",
+    "!src/main.ts"
   ],
+  "moduleNameMapper": {
+    "^@environment/(.*)$": "<rootDir>/src/environment/$1",
+    "^@common/(.*)$": "<rootDir>/src/app/common/$1",
+    "^@shared/(.*)$": "<rootDir>/src/app/shared/$1",
+    "^@pages/(.*)$": "<rootDir>/src/app/pages/$1",
+    "^@src/(.*)$": "<rootDir>/src/$1"
+  },
   "transformIgnorePatterns": ["node_modules/(?!.*\\.(mjs|js)$|.*@ngneat)"]
 }
