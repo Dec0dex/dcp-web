@@ -5,11 +5,12 @@ FROM node:20-alpine AS base
 
 # Install and use pnpm
 RUN npm install -g pnpm
+RUN npm install -g @angular/cli
 
 #############################
 # BUILD FOR LOCAL DEVELOPMENT
 #############################
-FROM base As development
+FROM base AS development
 WORKDIR /app
 RUN chown -R node:node /app
 
@@ -37,10 +38,13 @@ COPY --chown=node:node --from=development /app/tsconfig.json ./tsconfig.json
 COPY --chown=node:node --from=development /app/tsconfig.app.json ./tsconfig.app.json
 COPY --chown=node:node --from=development /app/angular.json ./angular.json
 
+# Build production
+RUN pnpm install
+RUN pnpm build:prod
+
 # Removes unnecessary packages adn re-install only production dependencies
 RUN pnpm prune --prod
 RUN pnpm install --prod
-RUN pnpm build:prod
 
 USER node
 

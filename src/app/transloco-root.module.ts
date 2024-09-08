@@ -8,7 +8,7 @@ import {
   TranslocoModule,
 } from '@jsverse/transloco';
 import { Injectable, NgModule } from '@angular/core';
-import { environment } from '../environments/environment';
+import { environment } from '../environment/environment';
 import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
