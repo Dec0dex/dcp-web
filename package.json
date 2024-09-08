@@ -38,7 +38,7 @@
     "test:e2e": "ng e2e",
     "lint": "eslint src/app/**/*.ts",
     "format": "prettier --write \"src/**/*.ts\" \"cypress/e2e/**/*.ts\"",
-    "analyze": "source-map-explorer dist/dcp-be/**/*.js",
+    "analyze": "source-map-explorer dist/dcp-web/**/*.js",
     "prepare": "husky || true",
     "audit": "auditjs ossi",
     "version": "auto-changelog -p && git add CHANGELOG.md",

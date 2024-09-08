@@ -7,9 +7,9 @@ import { en as enThemeConfig } from './config/theme/en.config.mjs';
 
 export default defineUserConfig({
   lang: 'en-US',
-  title: 'DCP Backend',
-  description: 'Developer Community Platform API',
-  base: '/dcp-be/',
+  title: 'DCP WEB',
+  description: 'Developer Community Platform Angular (Web)',
+  base: '/dcp-web/',
   bundler: viteBundler(),
   markdown: {
     toc: {
@@ -19,7 +19,7 @@ export default defineUserConfig({
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'Developer Community Platform API 🎉',
+      title: 'Developer Community Platform Angular (Web) 🎉',
     },
   },
   theme: defaultTheme({
