@@ -116,7 +116,7 @@
     "source-map-explorer": "^2.5.3",
     "ts-node": "~10.9.2",
     "typescript": "^5.5.4",
-    "vue": "^3.4.38",
+    "vue": "^3.5.3",
     "vuepress": "^2.0.0-rc.15",
     "vuepress-plugin-md-enhance": "^2.0.0-rc.52"
   },
